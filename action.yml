@@ -11,7 +11,6 @@ runs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-      shell: bash
     - run: npm ci
       shell: bash
     - run: npm run build --if-present
